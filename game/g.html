@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The cross Game</title>
+	<link rel="stylesheet" type="text/css" href="gsty.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="button">
+				<a onclick="newgame()" id="btn" href="">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					New Game
+				</a>
+				<a onclick="clear()" id="btn" href="">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Clear
+				</a>
+			</div>
+			<div class="contentbox">
+				<h1>The cross game</h1>
+				<p>This is a <strong>two</strong> player game.First player has to mark anywhere in the box. Then second player has to mark and the game continues. The first person to make there mark consecutively in any of the direction turns out to be the winner.</p>
+				<div class="mo">
+				<span id="tooltip">Rules</span>
+			</div>
+			</div>
+			<div class="gamebox">
+				<div onclick="change(0),turn(),check()" id="b0" class="b"></div>
+				<div onclick="change(1),turn(),check()" id="b1" class="b"></div>
+				<div onclick="change(2),turn(),check()" id="b2" class="b"></div>
+				<div onclick="change(3),turn(),check()" id="b3" class="b"></div>
+				<div onclick="change(4),turn(),check()" id="b4" class="b"></div>
+				<div onclick="change(5),turn(),check()" id="b5" class="b"></div>
+				<div onclick="change(6),turn(),check()" id="b6" class="b"></div>
+				<div onclick="change(7),turn(),check()" id="b7" class="b"></div>
+				<div onclick="change(8),turn(),check()" id="b8" class="b"></div>
+			</div>
+			<div id="txt"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="gscript.js"></script>
+</body>
+</html>
