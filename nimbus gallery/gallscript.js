@@ -6,7 +6,7 @@ function typing() {
     {
     document.getElementById('type').innerHTML+=txt.charAt(i);
     i++;
-    setInterval(typing,500);
+    setTimeout(typing,100);
     }
 }
 typing();

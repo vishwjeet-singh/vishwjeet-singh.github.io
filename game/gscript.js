@@ -69,7 +69,7 @@ function check() {
 		{
 			document.getElementById('txt').innerHTML+=txt.charAt(i);
 			i++;
-			setInterval(typing,100);
+			setTimeout(typing,50);
 		}
 	}
 	typing();	
@@ -88,7 +88,7 @@ function check() {
 			{
 			document.getElementById('txt').innerHTML+=txt.charAt(i);
 			i++;
-			setInterval(typing,100);
+			setTimeout(typing,50);
 			}
 		}
 		typing();
@@ -103,7 +103,7 @@ function check() {
 			{
 			document.getElementById('txt').innerHTML+=txt.charAt(i);
 			i++;
-			setInterval(typing,100);
+			setTimeout(typing,50);
 			}
 		}
 		typing();
