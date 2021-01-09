@@ -1,4 +1,15 @@
 
+var txt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, magnam praesentium asperiores consequatur commodi corporis accusamus doloremque.";
+var i=0;
+function typing() {
+    if(i < txt.length)
+    {
+    document.getElementById('type').innerHTML+=txt.charAt(i);
+    i++;
+    setInterval(typing,500);
+    }
+}
+typing();
 function createsquare() {
     const colors = ['#2196f3','#e91e63','#ffeb3b','#74ff1d'];
     const section=document.querySelector('section');

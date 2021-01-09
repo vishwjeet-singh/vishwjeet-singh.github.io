@@ -6,9 +6,56 @@
 body{
     overflow: hidden;
     height: 100vh;
-    background: black;
+    background:radial-gradient(#111,#000);
    
 }
+
+
+h1{
+    width: fit-content;
+    color: transparent;
+    font-size: 5em;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    background: linear-gradient(to bottom, #222 0%,#222 50%,#111 50%,#111 100%);
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transition: 0.5s;
+}
+h1:hover{
+    letter-spacing: 6px;
+}
+h1:before{
+    content: attr(data-text);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    z-index: -1;
+    background: linear-gradient(45deg,#ff0,#0f0,#f00,#00f,#0f0);
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: blur(5px);
+}
+
+
+.text{
+    color: rgba(255,255,255, 0.5);
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+.text p{
+
+    font-family: monospace;
+    font-size: 20px;
+}
+
+
+
+
+
+
 section{
     height: 100vh;
 }
@@ -16,6 +63,7 @@ span{
     position: absolute;
     pointer-events: none;
     background: #fff;
+    opacity: 0.6;
     animation: animate 5s linear infinite;
 }
 @keyframes animate{
