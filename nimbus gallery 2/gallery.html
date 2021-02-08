@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="gallsty.css">
+</head>
+<body>
+    <h1 data-text="Gallery">Nimbus</h1>
+    <div class="galltext">
+        <p>Gallery</p>
+    </div>
+    <div class="text">
+        <p id="type"><b style="color: aliceblue;">Nimbus 2020 was awesome.</b></p>
+    </div>
+
+
+    <div class="carousel">
+        <div class="carousel-item">
+            <img src="imagec.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="imagec.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="imagec.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="imagec.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="imagec.jpg">
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').carousel();
+          });
+    </script>
+    <script src="gallscript.js"></script>
+</body>
+</html>
