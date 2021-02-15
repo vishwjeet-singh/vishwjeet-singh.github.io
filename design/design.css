@@ -1,0 +1,145 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.box1{
+    width: 50%;
+    height: 100%;
+    background-color: #d8e2dc;
+    padding: 3%;
+    box-sizing: border-box;
+}
+.box1 nav{
+    padding: 0;
+    margin: 0;
+
+}
+.box1 nav ul{
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+} 
+.box1 nav ul .spark{
+    display: flex;
+}
+.box1 nav ul .spark span{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.box1 nav ul .spark span p{
+    padding: 0;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 60%;
+    background-color: black;
+}
+.box1 nav ul li{
+    position: relative;
+    list-style-type: none;
+    padding: 2%;
+    
+}
+.box1 nav ul .sigup{
+    border-bottom: 2px solid black;
+}
+.box1 nav ul .sigup::before{
+    content: '';
+    position: absolute;
+    width: 93%;
+    border-bottom: 2px solid black;
+    margin-top: 43%;
+    margin-left: -6%;
+    transform: rotateZ(354deg);
+}
+.box1 nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.box1 .text{
+    font-size: 86px;
+    padding: 6%;
+}
+.box1 footer{
+    width: 60%;
+}
+.box1 footer ul{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.box1 footer ul li{
+   
+    padding: 5%;
+    list-style: none;
+}
+.box1 footer ul .getstarted{
+    background-color: black;
+    transition: 0.25s;
+}
+.box1 footer ul .getstarted:hover{
+    opacity: 0.8;
+}
+
+.box1 footer ul .getstarted a{
+    color: white;
+}
+.box1 footer ul li a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.box1 .wrapimage{
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+.box1 .wrapimage img{
+    position: absolute;
+    right: 15%;
+    top: -30%;
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*box 2 design starts here*/
+.box2{
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+.box2 img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 1100px){
+    .box1 .text{
+        font-size: 50px;
+    }
+} 
