@@ -126,6 +126,7 @@ body{
 
 /*box 2 design starts here*/
 .box2{
+    display: block;
     box-sizing: border-box;
     padding: 2%;
     background-color: black;
@@ -143,3 +144,32 @@ body{
         font-size: 50px;
     }
 } 
+@media only screen and (max-width: 700px){
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        display: none;
+    }
+    .box1 footer{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .box1 footer ul{
+        flex-direction: column;
+    }
+    .box1 .wrapimage{
+        display: none;
+    }
+    .box1 footer{
+        width: 100%;
+    }
+    .box1 .text{
+        text-align: center;
+    }
+    .box1 footer ul{
+        padding: 0;
+        margin: 0;
+    }
+}
